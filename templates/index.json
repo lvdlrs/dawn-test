@@ -48,7 +48,7 @@
         "localvideo": "shopify://files/videos/video_placeholder.mp4",
         "is_autoplay": true,
         "vheight": "small",
-        "vdesktop_image_width": "vmedium",
+        "vdesktop_image_width": "vlarge",
         "vlayout": "video_first",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
