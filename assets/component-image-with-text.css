@@ -415,3 +415,41 @@
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
+
+/* IMAGE WITH TEXT AND VIDEO */
+
+.video__with-text video{
+  object-fit: cover;
+}
+
+.video__btncontainer{
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  z-index: 2!important;
+}
+
+.video__playbutton{
+  background-color: rgb(var(--color-background));
+  border: .1rem solid rgba(var(--color-foreground), .1);
+  border-radius: 50%;
+  color: rgb(var(--color-foreground));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.2rem;
+  width: 6.2rem;
+  transition: transform var(--duration-short)ease, color var(--duration-short)ease;
+  z-index: -1;
+  position: relative;
+}
+
+.video__btncontainer:hover .video__playbutton{
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
