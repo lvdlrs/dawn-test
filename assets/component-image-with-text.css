@@ -431,6 +431,7 @@
   display: flex!important;
   align-items: center!important;
   justify-content: center!important;
+  z-index: 2;
 }
 
 .video__playbutton{
@@ -444,7 +445,8 @@
   height: 6.2rem;
   width: 6.2rem;
   transition: transform var(--duration-short)ease, color var(--duration-short)ease;
-  z-index: 1;
+  z-index: -1;
+  position: relative;
 }
 
 .video__btncontainer:hover .video__playbutton{
