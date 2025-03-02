@@ -7,17 +7,18 @@
             let playBtn = btnContainer.querySelector('.video__playbutton');
             let video = viditem.querySelector('video');
 
-            btnContainer.addEventListener('click', (event) => {
-                if (event.target !== playBtn) {
-                    playBtn.click(); 
-                }
 
+            playBtn.addEventListener('click', () => {
                 playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
 
                 video.paused ? video.play() : video.pause();
             });
 
-            playBtn.addEventListener('click', () => {
+            btnContainer.addEventListener('click', (event) => {
+                if (event.target !== playBtn) {
+                    playBtn.click(); 
+                }
+
                 playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
 
                 video.paused ? video.play() : video.pause();
