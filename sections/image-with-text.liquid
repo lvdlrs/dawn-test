@@ -47,7 +47,7 @@
               style="padding-bottom: {{ 1 | divided_by: localvideo.aspect_ratio | times: 100 }}%;"
             {% endif %}
           >
-            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false, poster: '1280x' }}
+            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false, poster: localvideo.preview_image }}
             {% unless is_autoplay %}
               <div class="video__btncontainer">
                 <button class="video__playbutton deferred-media__poster-button">
