@@ -48,6 +48,11 @@
             {% endif %}
           >
             {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false }}
+            {% unless is_autoplay %}
+              <span class="svg-wrapper">
+                {{- 'icon-play.svg' | inline_asset_content -}}
+              </span>
+            {% endunless %}
           </div>
         </div>
         <div class="image-with-text__text-item grid__item">
