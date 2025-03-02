@@ -422,6 +422,12 @@
   object-fit: cover;
 }
 
+.video__btncontainer{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
 .video__playbutton{
   background-color: rgb(var(--color-background));
   border: .1rem solid rgba(var(--color-foreground), .1);
@@ -432,9 +438,6 @@
   justify-content: center;
   height: 6.2rem;
   width: 6.2rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration-short)ease, color var(--duration-short)ease;
   z-index: 1;
