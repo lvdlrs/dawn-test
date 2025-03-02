@@ -447,7 +447,7 @@
   z-index: 1;
 }
 
-.video__playbutton:hover{
+.video__btncontainer:hover .video__playbutton{
   background-color: rgb(var(--color-foreground));
   color: rgb(var(--color-background));
 }
