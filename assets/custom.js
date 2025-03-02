@@ -13,10 +13,14 @@
                 }
 
                 playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
+
+                video.paused ? video.play() : video.pause();
             });
 
             playBtn.addEventListener('click', () => {
                 playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
+
+                video.paused ? video.play() : video.pause();
             });
         })
     }
