@@ -439,3 +439,8 @@
   transition: transform var(--duration-short)ease, color var(--duration-short)ease;
   z-index: 1;
 }
+
+.video__playbutton:hover{
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
