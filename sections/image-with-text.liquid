@@ -49,7 +49,7 @@
           >
             {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false }}
             {% unless is_autoplay %}
-              <button class="video__playbutton">
+              <button class="video__playbutton deferred-media__poster-button">
                 <span class="svg-wrapper">
                 {{- 'icon-play.svg' | inline_asset_content -}}
               </span>
