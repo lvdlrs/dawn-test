@@ -4,12 +4,19 @@
     if( videoWithText.length > 0 ){
         videoWithText.forEach((viditem)=>{
             let btnContainer = viditem.querySelector('.video__btncontainer');
+            let playBtn = btnContainer.querySelector('.video__playbutton');
 
-            btnContainer.addEventListener('click', et=>{
-                let playBtn = et.currentTarget.querySelector('button');
+            btnContainer.addEventListener('click', (event) => {
+                if (event.target !== playBtn) {
+                    playBtn.click(); 
+                }
 
-                playBtn.style.opacity = 0 ? playBtn.style.opacity = 1 : playBtn.style.opacity = 0;
-            })
+                playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
+            });
+
+            playBtn.addEventListener('click', () => {
+                playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
+            });
         })
     }
 })();
