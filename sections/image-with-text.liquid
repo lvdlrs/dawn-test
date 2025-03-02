@@ -42,7 +42,7 @@
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if vwidth == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if vlayout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
         <div class="image-with-text__media-item image-with-text__media-item--{{ vwidth }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
           <div
-            class="image-with-text__media image-with-text__media--{{ vheight }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if localvideo != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
+            class="image-with-text__media video__with-text image-with-text__media--{{ vheight }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if localvideo != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
             {% if vheight == 'adapt' and localvideo != blank %}
               style="padding-bottom: {{ 1 | divided_by: localvideo.aspect_ratio | times: 100 }}%;"
             {% endif %}
