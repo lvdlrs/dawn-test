@@ -6,7 +6,7 @@
             let btnContainer = viditem.querySelector('.video__btncontainer');
 
             btnContainer.addEventListener('click', et=>{
-                console.log(this.querySelector('button'))
+                console.log(et.currentTarget.querySelector('button'))
             })
         })
     }
