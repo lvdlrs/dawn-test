@@ -47,7 +47,7 @@
               style="padding-bottom: {{ 1 | divided_by: localvideo.aspect_ratio | times: 100 }}%;"
             {% endif %}
           >
-            {{ localvideo |  video_tag: 'video__withtext', autoplay: is_autoplay, preload: "none", controls: false }}
+            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false }}
           </div>
         </div>
         <div class="image-with-text__text-item grid__item">
