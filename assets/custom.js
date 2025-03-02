@@ -3,6 +3,11 @@
 
     if( videoWithText.length > 0 ){
         videoWithText.forEach((viditem)=>{
+            let btnContainer = viditem.querySelector('.video__btncontainer');
+
+            btnContainer.addEventListener('click', et=>{
+                console.log(this.querySelector('button'))
+            })
         })
     }
 })();
