@@ -443,7 +443,6 @@
   justify-content: center;
   height: 6.2rem;
   width: 6.2rem;
-  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration-short)ease, color var(--duration-short)ease;
   z-index: 1;
 }
