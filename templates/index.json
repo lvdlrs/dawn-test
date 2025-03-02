@@ -49,7 +49,7 @@
         "is_autoplay": true,
         "vheight": "small",
         "vdesktop_image_width": "vlarge",
-        "vlayout": "video_first",
+        "vlayout": "video_second",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
