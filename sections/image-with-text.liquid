@@ -46,8 +46,9 @@
             {% if vheight == 'adapt' and localvideo != blank %}
               style="padding-bottom: {{ 1 | divided_by: localvideo.aspect_ratio | times: 100 }}%;"
             {% endif %}
-          >
-            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false, poster: localvideo.preview_image }}
+          > 
+          {% assign previewimage = localvideo.preview_image |  image_url: width: localvideo.preview_image.width, height: localvideo.preview_image.height %}
+            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false, poster: previewimage }}
             {% unless is_autoplay %}
               <div class="video__btncontainer">
                 <button class="video__playbutton deferred-media__poster-button">
