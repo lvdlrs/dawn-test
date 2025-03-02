@@ -48,8 +48,9 @@
             {% endif %}
           > 
           {% assign previewimage = localvideo.preview_image |  image_url: width: localvideo.preview_image.width, height: localvideo.preview_image.height %}
-            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, preload: "none", controls: false, poster: previewimage }}
+            
             {% unless is_autoplay %}
+              {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, muted: false, preload: "none", controls: false, poster: previewimage }}
               <div class="video__btncontainer">
                 <button class="video__playbutton deferred-media__poster-button">
                   <span class="svg-wrapper">
@@ -57,6 +58,8 @@
                 </span>
               </button>
               </div>
+            {% else %}
+            {{ localvideo |  video_tag: class:'video__withtext', autoplay: is_autoplay, muted: true, preload: "none", controls: false, poster: previewimage }}
             {% endunless %}
           </div>
         </div>
