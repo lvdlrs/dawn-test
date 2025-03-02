@@ -5,6 +5,7 @@
         videoWithText.forEach((viditem)=>{
             let btnContainer = viditem.querySelector('.video__btncontainer');
             let playBtn = btnContainer.querySelector('.video__playbutton');
+            let video = viditem.querySelector('video');
 
             btnContainer.addEventListener('click', (event) => {
                 if (event.target !== playBtn) {
