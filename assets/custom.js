@@ -9,18 +9,13 @@
 
             playBtn.addEventListener('click', () => {
                 playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
-
                 video.paused ? video.play() : video.pause();
             });
 
             btnContainer.addEventListener('click', (event) => {
                 if (event.target !== playBtn) {
-                    playBtn.click(); 
+                    playBtn.click();
                 }
-
-                playBtn.style.opacity = playBtn.style.opacity === '0' ? '1' : '0';
-
-                video.paused ? video.play() : video.pause();
             });
         })
     }
