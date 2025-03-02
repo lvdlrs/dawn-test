@@ -6,7 +6,9 @@
             let btnContainer = viditem.querySelector('.video__btncontainer');
 
             btnContainer.addEventListener('click', et=>{
-                console.log(et.currentTarget.querySelector('button'))
+                let playBtn = et.currentTarget.querySelector('button');
+
+                playBtn.style.opacity == 0 ? playBtn.style.opacity == 1 : playBtn.style.opacity == 0;
             })
         })
     }
